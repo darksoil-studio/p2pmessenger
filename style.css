@@ -1,7 +1,8 @@
 body {
-  color: white !important;
+  /* color: white !important; */
   font-family: "Rubik", sans-serif;
   margin: 0;
+  /* background-color: black; */
 }
 
 :root {
@@ -18,44 +19,51 @@ body {
   --sl-color-teal-900: hsl(175.9 60.8% 19%);
   --sl-color-teal-950: hsl(176.5 58.6% 11.4%);
 
-  --theme-primary: var(--sl-color-teal-600);
-  --theme-on-primary: white;
-  --theme-dark: var(--sl-color-teal-600);
-  --theme-on-dark: #ffffff;
-  --theme-light: var(--sl-color-teal-600);
-  --theme-on-dark: #ffffff;
-  --theme-secondary: var(--sl-color-teal-800);
-  --theme-secondary-light: #f97316;
-  --default-headline-color: white;
+  /* --theme-primary: var(--sl-color-teal-600); */
+  /* --theme-on-primary: white; */
+  /* --theme-dark: var(--sl-color-teal-600); */
+  /* --theme-on-dark: #ffffff; */
+  /* --theme-light: var(--sl-color-teal-600); */
+  /* --theme-on-dark: #ffffff; */
+  /* --theme-secondary: var(--sl-color-teal-800); */
+  /* --theme-secondary-light: #f97316; */
+  /* --default-headline-color: white; */
 }
 
 rocket-rotating-text {
   color: var(--theme-secondary);
 }
 
-a {
-  color: white;
-}
+/* a { */
+/* color: white; */
+/* } */
 
-a.rocket-card {
-  color: white;
-}
+/* a.rocket-card { */
+/* color: white; */
+/* } */
 
 .highlight {
   color: var(--theme-secondary);
 }
 
-p {
+p,
+li {
   font-size: 20px;
 }
 
-p,
-summary {
-  color: white !important;
+/* p, */
+/* summary, */
+/* li { */
+/* color: white !important; */
+/* } */
+
+.title {
+  font-size: 24px;
 }
 
-rocket-header-scroll-menu a {
-  color: white;
+rocket-header-scroll-menu a,
+span {
+  /* color: white; */
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -63,17 +71,13 @@ rocket-header-scroll-menu a {
 }
 
 rocket-header-scroll-menu {
-  position: absolute;
-  width: 100vw;
-  height: 110px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 0) 0%,
-    rgba(0, 0, 0, 0.7035189075630253) 13%,
-    rgba(0, 0, 0, 1) 34%
-  );
+  /* position: absolute; */
+  /* width: 100vw; */
+  /* height: 110px; */
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.5) 2px 2px 4px;
 }
+
 main > *:first-child {
   padding-top: 0 !important;
 }
@@ -82,43 +86,6 @@ main > *:nth-child(2n) {
 }
 main > *:nth-child(2n + 1) {
   background: none !important;
-}
-body {
-  overflow: hidden;
-}
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-9px) scale(11);
-  height: 1700px;
-}
-.darksoil-background {
-  filter: brightness(40%);
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 70%,
-      rgba(0, 0, 0, 0.2) 80%,
-      rgba(0, 0, 0, 0.7) 90%,
-      rgba(0, 0, 0, 0.9) 95%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url(https://raw.githubusercontent.com/darksoil-studio/media/7ca290dbbd3dfbd9f638cb5dc0cdb6639ee484ad/images/darksoil.jpg) !important;
-  background-size: cover;
-  background-position: center;
 }
 
 h1 {
@@ -129,7 +96,9 @@ h1 {
 h2 {
   text-align: left !important;
   font-size: 48px !important;
-  margin-bottom: 40px !important;
+  margin-bottom: 20px !important;
+  border-bottom: 4px solid rgba(175, 175, 175, 0.4);
+  margin: 0;
 }
 h3 {
   margin-top: 0 !important;
@@ -137,11 +106,6 @@ h3 {
 }
 p {
   text-align: justify;
-}
-
-rocket-content-area {
-  padding: 40px;
-  min-height: 50vh;
 }
 
 .row {
@@ -154,6 +118,14 @@ rocket-content-area {
   flex-direction: column;
 }
 
+.no-bullets li {
+  list-style: none;
+}
+
+li {
+  margin: 8px 0;
+}
+
 rocket-card {
   border: none;
   background-color: rgba(150, 150, 150, 0.2);
@@ -163,11 +135,7 @@ rocket-card {
   padding: 3rem 3rem;
 }
 
-body {
-  background-color: black;
-}
-
-rocket-content-area p {
+rocket-content-area > * {
   max-width: 800px;
 }
 
@@ -184,14 +152,14 @@ rocket-columns rocket-card {
   object-fit: contain;
 }
 
-footer {
-  background: var(--theme-secondary);
-  color: #fff;
-}
+/* footer { */
+/* background: var(--theme-secondary); */
+/* color: #fff; */
+/* } */
 
-footer a {
-  color: #fff;
-}
+/* footer a { */
+/* color: #fff; */
+/* } */
 
 rocket-header-scroll-menu a.active,
 rocket-header-scroll-menu a:hover {
