@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: ''
+  base: "/p2pmessenger",
 });
 
 /*
@@ -19,4 +19,3 @@ export default defineConfig({
     },
   },
 });*/
-
