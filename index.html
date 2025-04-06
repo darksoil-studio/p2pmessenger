@@ -8,8 +8,8 @@
     
     <title>Dash Chat</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="module" crossorigin src="/p2pmessenger/assets/index-b289a33a.js"></script>
-    <link rel="stylesheet" href="/p2pmessenger/assets/index-92be9a31.css">
+    <script type="module" crossorigin src="/p2pmessenger/assets/index-54f52c8c.js"></script>
+    <link rel="stylesheet" href="/p2pmessenger/assets/index-b46cbb2d.css">
   </head>
   <body>
     <!--a.class links-->
@@ -71,6 +71,23 @@
         </rocket-content-area>
 
         <rocket-content-area>
+          <h2>Download the app</h2>
+          
+            <div style="display: flex; flex-direction: column; gap: 16px; max-width: 400px;">
+              <download-installer-button
+                windows-url="https://github.com/darksoil-studio/dash-chat/releases/download/v0.1.4/Dash.Chat_0.1.4_x64_en-US.msi"
+                todooonix-command="nix run github:darksoil-studio/dash-chat/v0.1.4"
+                macos-intel-url="https://github.com/darksoil-studio/dash-chat/releases/download/v0.1.4/Dash.Chat_0.1.4_x64.dmg"
+                macos-silicon-url="https://github.com/darksoil-studio/dash-chat/releases/download/v0.1.4/Dash.Chat_0.1.4_aarch64.dmg"
+                linux-url="https://github.com/darksoil-studio/dash-chat/releases/download/v0.1.4/Dash.Chat_0.1.4_amd64.AppImage"
+              >
+              </download-installer-button>
+            </div>
+        
+          
+        </rocket-content-area>
+
+        <rocket-content-area>
           <h2 id="what-we-do" link-text="what we do">
             Current Status & Next Steps
           </h2>
@@ -88,7 +105,10 @@
               encryption)
             </li>
             <li>☐ Refine based on direct feedback</li>
+            <li>☐ UI/UX Design</li>
             <li>☐ iOS, File Sharing, Location Sharing</li>
+            <li>☐ App Store / Play Store Availibility</li>
+            <li>☐ Push Notifications</li>
             <li>
               ☐ Disappearing messages, Hidden locked chats, Emojis, Search,
               Reactions
@@ -113,9 +133,10 @@
           </p>
           <p>
             If your community or organization would like to participate, please
-            reach out securely via <a href="#">this form</a>.
+            reach out securely via this form (coming soon).
           </p>
         </rocket-content-area>
+        
 
         <rocket-content-area>
           <h2>Why Another Messaging App?</h2>
@@ -162,7 +183,9 @@
           </p>
           <p>
             <strong>Advisors:</strong> Andreas Dzialocha (p2panda, Delta Chat),
-            Holmes Wilson (Quiet), Stacey Tsui (Security trainer)
+            Holmes Wilson (Quiet), Stacey Tsui (Security trainer), Christian Tshudin (TinySSB), 
+            Scott Garrison (Disaster.Radio)
+            
           </p>
         </rocket-content-area>
 
@@ -189,6 +212,8 @@
       p2pmessenger.org is a project by&nbsp;
       <a class="text-white" href="https://darksoil.studio">Darksoil Studio</a>.
     </footer>
+    
+    
     
   </body>
 </html>
